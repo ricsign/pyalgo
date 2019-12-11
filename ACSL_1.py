@@ -12,12 +12,12 @@ def handle(n,p):
     return ret
 
 #Input method 1
-# a = []
-# for _ in range(5):
-#     a.append(input().split())
-#
-# for inputs in range(5):
-#     print(str(inputs+1) + '. ' + handle(a[inputs][0], int(a[inputs][1])))
+a = []
+for _ in range(5):
+    a.append(input().split())
+
+for inputs in range(5):
+    print(handle(a[inputs][0], int(a[inputs][1])))
 
 
 #Input method 2
