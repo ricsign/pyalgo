@@ -1,3 +1,6 @@
+# Name: Richard Shuai
+
+
 def handle(n,p):
     ret = ''
     special_dig = int(n[0-p])
