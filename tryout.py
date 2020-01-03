@@ -39,6 +39,7 @@ if valid_page(li):
 else:
     print('N')
 '''
+#This solution is incorrect
 # def longeest_p_substring(s):
 #     if s is None or len(s) == 1: return s
 #     if len(s) == 2: return s[0]
