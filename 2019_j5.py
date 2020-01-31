@@ -9,6 +9,7 @@ line4 = input().split()
 total_steps,initial_state,final_state = int(line4[0]),line4[1],line4[2]
 
 
+# This can be improved by using greedy algorithm,which examine the leastnext step
 def rule_of_three(current_state,step_left):
     if current_state == final_state and step_left == 0:
         return visited
