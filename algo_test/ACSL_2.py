@@ -1,6 +1,11 @@
+#Name: Richard Shuai
+#ACSL 2
+#WMCI
+
 same_list = []
-alphebet_tab = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-alphebet_table = alphebet_tab[::-1]
+# alphebet_tab = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+# #It can be replaced by using ascii
+# alphebet_table = alphebet_tab[::-1]
 
 
 def sameness(s1,s2):
@@ -56,8 +61,7 @@ def sameness(s1,s2):
 
 
     for i in range(update_shorter_length):
-        a = (alphebet_table.index(s2[i]) - alphebet_table.index(s1[i]))
-        sum += a
+        sum += ord(s1[i]) - ord(s2[i])
     print(sum)
     same_list = []
 
