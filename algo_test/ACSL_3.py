@@ -1,4 +1,10 @@
-import sys
+# Name: Richard Shuai
+# Grade: 10
+# Teacher: Mr.Schellenberg
+# ACSL 3
+# WMCI
+
+
 table = [[0 for _ in range(4)] for _ in range(4)]
 del_dictionary = {'~A':(0,1),'A':(2,3),'~B':(0,1),'B':(2,3),'~C':(1,2),'C':(0,3),'~D':(1,2),'D':(0,3)}
 hexa_lookup = {10:'A',11:'B',12:'C',13:'D',14:'E',15:'F'}
@@ -46,6 +52,8 @@ def converter():
 def veitch(veitch_str):
     global table
     buffer = ''
+    if veitch_str == '':
+        return '0000'
     for char in veitch_str:
         if char == '+':
             read_buffer_load(buffer)
@@ -63,7 +71,7 @@ def veitch(veitch_str):
     return ret
 
 for _ in range(5):
-    ret_vals.append(veitch(sys.stdin.readline().strip()))
+    ret_vals.append(veitch(input().strip()))
 for i in ret_vals:
     print(i)
 
