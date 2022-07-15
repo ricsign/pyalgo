@@ -1,2 +1,2 @@
-# Python_Algorithm_Test
-Screenshot of some algorithm tests
+# Pyalgo
+A collection of different Python data structures & algorithms projects.
